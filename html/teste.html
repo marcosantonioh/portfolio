@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <!-- <link rel="icon" href="images/image352.png"> -->
+    <link rel="stylesheet" href="css/teste.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+
+    <section id="upload-art">
+        <h2>Publicar Nova Arte</h2>
+        <form id="artForm" enctype="multipart/form-data">
+            <label for="artTitle">Título da Arte:</label>
+            <input type="text" id="artTitle" name="artTitle" required>
+            
+            <label for="artImage">Imagem da Arte:</label>
+            <input type="file" id="artImage" name="artImage" accept="image/*" required>
+
+            <button type="button" onclick="addArt()">Publicar Arte</button>
+        </form>
+    </section>
+
+
+    <script src="js/teste.js"></script>
+
+</body>
+
+</html>
