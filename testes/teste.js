@@ -2,18 +2,12 @@ const express = require("express")
 
 const app = express()
 
+app.use(express.static('public'))
 
-app.get("/", function(req, res){
+// app.get("/", function(req, res){
 
-    res.send("welcome to my main page")
+//     res.sendFile(__dirname + "/html/teste.html")
 
-})
+// });
 
-
-app.get("/ola/:nome", function(req, res){
-    
-    res.send("Olá " + req.params.nome)
-})
-
-
-app.listen(3000, function(){console.log("servidor rodando!")})
+app.listen(4000, function(){console.log("servidor rodando!")})

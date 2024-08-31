@@ -9,6 +9,15 @@ function previewImage(event) {
     reader.readAsDataURL(event.target.files[0]);
 }
 
+
+
+
+
+
+
+
+
+
 function submitForm() {
     const form = document.getElementById('artForm');
     const formData = new FormData(form);
