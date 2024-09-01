@@ -40,3 +40,26 @@ function toggleUploadForm() {
 // Adiciona o evento de clique ao botão para abrir o formulário
 document.querySelector('.btn_newArt button').addEventListener('click', toggleUploadForm);
 
+
+
+
+
+
+
+
+
+const textToType = "Looking for the next level...";
+const typewriterElement = document.getElementById("typewriter");
+
+let currentIndex = 0;
+
+function typeWriter() {
+    if (typewriterElement && currentIndex < textToType.length) {
+        typewriterElement.textContent += textToType.charAt(currentIndex);
+        currentIndex++;
+        setTimeout(typeWriter, 100);  // Ajuste o tempo para acelerar ou desacelerar o efeito
+    }
+}
+
+// Inicia o efeito
+typeWriter();

@@ -1,49 +1,4 @@
 
-function previewImage(event) {
-    const reader = new FileReader();
-    reader.onload = function() {
-        const img = document.getElementById('artPreview');
-        img.src = reader.result;
-        img.style.display = 'block';
-    }
-    reader.readAsDataURL(event.target.files[0]);
-}
-
-
-
-
-
-
-
-
-
-
-function submitForm() {
-    const form = document.getElementById('artForm');
-    const formData = new FormData(form);
-
-    fetch('/upload', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert(data);
-    })
-    .catch(error => {
-        console.error('Erro:', error);
-    });
-}
-
-
-
-
-
-
-
-
-
-
 function previewImage(event){
 
     var reader = new FileReader();
@@ -63,5 +18,32 @@ function previewImage(event){
 
 
 
+function submitForm() {
+    const form = document.getElementById('artForm');
+    const formData = new FormData(form);
 
+    // Desabilitar o botão de submissão
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.textContent = "Publicando...";
+
+    fetch('/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        // Redireciona para uma página de sucesso
+        window.location.href = './success.html';
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Ocorreu um erro ao publicar a arte. Por favor, tente novamente.');
+    })
+    .finally(() => {
+        // Reabilitar o botão de submissão
+        submitButton.disabled = false;
+        submitButton.textContent = "Publicar Arte";
+    });
+}
 

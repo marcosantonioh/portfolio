@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+:root{
+    --cor1:rgb(255, 47, 47);
+    --sombra1: rgb(197, 0, 33);
+    --cor2:rgb(19, 19, 19);
+    --cor3:  #007bff;
+    --sombra3: #0056b3;
+}
+
+
+.sucess{
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 0;
+}
+
+
+.sucess img{
+    width: 21em;
+    height: 100%;
+    margin: 0;
+}
+
+
+.sucess h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sucess .btn{
+    width: 100%;
+    color: black;
+    padding: 12px;
+    background-color: var(--cor3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sucess .btn:hover {
+    background-color: var(--sombra3);
+}
