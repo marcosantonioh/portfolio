@@ -6,7 +6,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: poppins;
-    /* overflow-x: hidden; Evita rolagem horizontal */
+    overflow-x: hidden; /*Evita rolagem horizontal*/
 }
 
 :root{
@@ -39,7 +39,11 @@ body, html {
 .nav-group1{
     /* border: solid red 1px; */
     padding: 5px 60px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -87,14 +91,6 @@ body, html {
     /* border: solid rgb(250, 237, 0); */
 }
 
-/* Seção Direita */
-.right-section {
-    flex: 2; /* Pode ajustar a proporção conforme necessário */
-    padding: 20px;
-    background-color: #f4f4f4;
-    overflow-y: hidden; /* Adiciona barra de rolagem se o conteúdo exceder a altura da tela */
-    /* margin: 0; */
-}
 
 
 
@@ -202,19 +198,6 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilo para a seção de contatos */
 .links {
     /* background-color: #f9f9f9; */
@@ -267,6 +250,19 @@ body, html {
 
 .navbar1 .logo1 .marcos{
     color: var(--cor1);
+}
+
+
+
+
+
+/* Seção Direita */
+.right-section {
+    flex: 2; /* Pode ajustar a proporção conforme necessário */
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: hidden; /* Adiciona barra de rolagem se o conteúdo exceder a altura da tela */
+    /* margin: 0; */
 }
 
 
@@ -525,7 +521,7 @@ body, html {
     .container {
         /* border: solid rgb(51, 194, 4); */
         display: grid;
-        
+        height: 100%;
     }
 
 
@@ -550,44 +546,78 @@ body, html {
 
     .left-section {
         padding: 10px;
-        display: none;
+        /* display: none; */
+    }
+
+
+
+        
+    .about-content {
+        text-align:center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .about-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .about-content h4 {
+        font-size: 0.9rem;
+        display: flex; 
+        align-items: center;
+        justify-content: start;
+    }
+
+    /* Estilo para os ícones */
+    .about-content h4 i {
+        font-size: 1.2rem;
+        margin-right: 8px;
+        color: var(--cor1);
     }
    
-    .right-section .navbar{
-        margin-top: 40px;
+    .right-section{
+        /* display: none; */
+        /* margin-top: 40px; */
     }
     .right-section .navbar a{
         font-size: 0.9em;
 
     }
 
+
+
+
     .btn_newArt button{
-        width: 12rem;
+        width: 14rem;
         height: 0.5rem;
-        font-size: 0.5rem;
-        padding: 1rem;
+        font-size: 0.9rem;
+        padding: 1.3rem;
     }
 
     .btn_newArt{
+        display: none;
         margin-bottom: 0;
         
     }
 
     .btn_newArt button i{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
 
     .button .btn-whats{
-        width: 12rem;
+        width: 14rem;
         height: 0.5rem;
-        font-size: 0.5rem;
-        padding: 1rem;
+        font-size: 0.9rem;
+        padding: 1.3rem;
     }
     
     
     .button .btn-whats i{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     
