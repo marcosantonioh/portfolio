@@ -63,3 +63,10 @@ function typeWriter() {
 
 // Inicia o efeito
 typeWriter();
+
+
+
+
+
+
+
