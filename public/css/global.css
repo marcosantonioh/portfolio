@@ -6,3 +6,8 @@
     --cor3:  #007bff;
     --sombra3: #0056b3;
 }
+
+/* Remove o efeito de destaque ao tocar */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
