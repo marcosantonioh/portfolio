@@ -651,7 +651,7 @@ body, html {
     }
 
     .btn_newArt{
-        display: none;
+        display: block;
         margin-bottom: 0;
         
     }
@@ -660,6 +660,12 @@ body, html {
         font-size: 1.3rem;
     }
 
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .button .btn-whats{
         width: 14rem;
