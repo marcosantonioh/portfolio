@@ -1,0 +1,193 @@
+
+/* Seção Esquerda */
+.left-section {
+    flex: 1; /* Pode ajustar a proporção conforme necessário */
+    background-color: #f4f4f4;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    /* border: solid rgb(250, 237, 0); */
+}
+
+
+
+
+.about-content {
+    text-align:start;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* background-color: #bababa; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin-top: 10px; /* Ajuste para posicionar a seção abaixo da imagem de perfil */
+    color: #333;
+}
+
+/* Estilo para o nome */
+.about-content h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--cor2);
+}
+
+/* Estilo para a profissão e localização */
+.about-content h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--cor2);
+    display: flex; 
+    align-items: center;
+}
+
+/* Estilo para os ícones */
+.about-content h4 i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: var(--cor1);
+}
+
+
+
+
+.button{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #666; */
+    height: 2.5rem;
+}
+
+.button .btn-whats{
+    background-color: rgb(96, 198, 70);
+    border: none;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.button .btn-whats:hover{
+    background-color: rgb(92, 176, 70);
+}
+
+
+.button .btn-whats i{
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+
+
+
+/* Estilo para a seção de contatos */
+.links {
+    /* background-color: #f9f9f9; */
+    padding: 2px 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    margin-top: 30px;
+    text-align: start;
+    color: #333;
+}
+
+/* Estilo para o título da seção de contatos */
+.links h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--cor2); /* Usando a variável de cor definida */
+}
+
+/* Estilo para os itens de contato */
+.links-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.links-item i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: var(--cor1);
+}
+
+/* Estilo para links de contato */
+.links-item a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links-item a:hover {
+    color: var(--cor1);
+}
+
+
+
+
+
+
+
+
+
+
+.btn_newArt{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #666; */
+    height: 2.5rem;
+}
+
+
+.btn_newArt button{
+    background-color: #007bff;
+    border: none;
+    width: 18rem;
+    height: 2.5rem;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: poppins;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.btn_newArt button:hover{
+    background-color: #0056b3;
+}
+
+
+.btn_newArt button i{
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+

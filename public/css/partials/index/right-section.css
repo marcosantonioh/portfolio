@@ -1,0 +1,201 @@
+
+
+.navbar{
+    /* background-color: greenyellow; */
+    /* padding: 20px 10px; */
+    border-bottom:  1px solid rgb(89, 89, 89);
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 10px; */
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #1e1e1e;
+    /* margin-right: 4em; */
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+
+/* Seção Direita */
+.right-section {
+    flex: 2; /* Pode ajustar a proporção conforme necessário */
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: hidden; /* Adiciona barra de rolagem se o conteúdo exceder a altura da tela */
+    /* margin: 0; */
+}
+
+
+
+#projetos {
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#projetos h2 {
+    text-align: center;
+    font-size: 1.2em;
+    /* margin-bottom: 30px; */
+    color: var(--cor2);
+    text-align: start;
+}
+
+
+
+
+.project-item {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+
+    /* width: 160px;
+    height: 284,444px; */
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+
+    /* width: 160px;
+    height: 284,444px; */
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.thumb {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.project-grid {
+    /* background-color: #0056b3; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* display: flex; */
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    /* gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto; */
+}
+
+/* CSS para limitar a exibição das artes
+.project-grid.limited .project-item {
+    display: none;
+} */
+
+/* Exibir apenas os primeiros 4 itens */
+.project-grid.limited .project-item:nth-child(n+5) {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+          
+    .project-grid {
+        
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));        
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* Exibir apenas os primeiros 4 itens */
+    .project-grid.limited .project-item:nth-child(n+4) {
+        display: none;
+    }
+
+    
+}
+
+
+
+
+
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-item:hover img {
+    transform: scale(1.1);
+}
+
+.project-grid .thumb img {
+    width: 225px;
+    height: 150px;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.thumb:hover{
+    transform: scale(1.05);
+}
+
+.project-grid .thumb:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.SeeAll{
+    /* background-color: #bdff38;  */
+    height: 100px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.SeeAll button{
+    cursor: pointer;
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.SeeAll_1 button:hover{
+    
+    background-color: rgb(21, 21, 173);
+    
+}
